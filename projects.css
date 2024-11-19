@@ -97,6 +97,15 @@ nav {
     font-family: 'Arial', sans-serif;
 }
 
+.item:hover {
+    background-color: #009578;
+    color: #EEEE;
+}
+
+.item:hover > h4 {
+    color: black;
+}
+
 .item h3 {
     margin: 5px 0;
     font-size: 24px;
@@ -263,52 +272,3 @@ nav {
         font-size: .70rem;
     }
 }
-
-/* @media (max-width: 320px) {
-    #page {
-        display: grid;
-        width: 100vw;
-        height: 100vh;
-        grid-template-areas:
-        "nav nav"
-        "main main";
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 30% 70%;
-    }
-    .container h1 {
-        font-family: 'Arial', sans-serif;
-        font-size: 28px;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .wrapper {
-        display: grid;
-        grid-template-rows: 40% 30% 30%;
-        grid-template-columns: 100%;
-        margin-top: 30px;
-    }
-    .item {
-        border: 2px solid #009578;
-        border-radius: 10px;
-        margin: 5px 10px;
-        padding: 10px 20px;
-        font-family: 'Arial', sans-serif;
-        margin-right: 30px;
-    }
-    
-    .item h3 {
-        margin: 5px 0;
-        font-size: 24px;
-    }
-    
-    .item h4 {
-        margin: 5px 0;
-        font-size: 18px;
-        color: #8b8b8b;
-    }
-    
-    .item p {
-        margin: 15px 0;
-        font-size: 14px;
-    }
-} */
