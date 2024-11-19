@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+nav {
+    padding: 1em 0;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+#navbar ul li {
+    margin: 1em 1em;
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-family: 'Arial', sans-serif;
+}
+
+.list li a {
+    text-decoration: none;
+    color: #EEEE;
+}
+
+#page {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+    "nav main"
+    "nav main"
+    "nav main";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 30% 70%;
+}
+
+#page > nav {
+    grid-area: nav;
+    background-color: #009578;
+}
+
+#page > main {
+    grid-area: main;
+    background-color: #EEEE;
+    font-family: 'Arial', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+}
+
+form input {
+    margin: 5px 0;
+    border: 2px solid #009578;
+    border-radius: 5px;
+    width: 50%;
+    background-color: #EEEE;
+    padding: 8px;
+}
+form textarea {
+    margin-top: 20px;
+    border: 2px solid #009578;
+    border-radius: 5px;
+    width: 50%;
+    background-color: #EEEE;
+    padding: 8px;
+    padding-bottom: 50px;
+}
+
+form .submit {
+    background-color: #009578;
+    color: #EEEE;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+form .submit:hover {
+    background-color: #EEEE;
+    border: 2px solid #009578;
+    color: #009578;
+    cursor: pointer;
+}
+
+form h1 {
+    color:#009578;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 38px;
+}
+
+.container {
+    margin-top: 20%;
+    margin-left: 15%;
+}
+
+@media (max-width: 482px) {
+    form h1 {
+        font-size: 2rem;
+    }
+    .submit {
+        padding: .2rem;
+        font-size: .7rem;
+    }
+}
+@media (max-width: 406px) {
+    form h1 {
+        font-size: 1.5rem;
+    }
+}

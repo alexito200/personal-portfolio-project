@@ -3,35 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects.css">
     <title>Personal Portfolio</title>
 </head>
 <body bgcolor="#f0f0f0">
-    <header>
-        <nav style="margin-bottom: 100px;">
-            <a href="main.html" style="text-decoration: none; color: black; font-size: 22px;">Personal Portfolio</a>
-            <a href="about.html" style="text-decoration: none; color: black; margin-left: 420px;">About Me</a> |
-            <a href="projects.html" style="text-decoration: none; color: black;">Projects</a> |
-            <a href="skills.html" style="text-decoration: none; color: black">Skills</a> |
-            <a href="contact.html" style="text-decoration: none; color: black">Contact</a>
-            <button style="float: right; font-size: 15px; color: black">Hire me</button>
+    <div id="page">
+
+        <nav id="navbar">
+            <ul class="list">
+                <li><a href="main.html">home</a></li>
+                <li><a href="experience.html">experience</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
-        <center style="font-size: 100px;">Projects</center>
-        <section>
-            <p>
-                <h3><strong>Classic Cookie Recipe Webpage</strong></h3>
-                <img src="cookies-project.jpg" alt="webpage about a cookie recipe" width="370" height="430">
-            </p>
-            <p>
-                <h3><strong>Offside Rule Webpage</strong></h3>
-                <img src="offside-project.jpg" alt="webpage about football's offside rule" width="370" height="430">
-            </p>
-            <p>
-                <h3><strong>Pickleball Webpage</strong></h3>
-                <img src="pickleball-project.jpg" alt="webpage about pickleball" width="370" height="430">
-            </p>
-        </section>
-    </main>
+
+        <main class="content">
+
+            <div class="container">
+                <h1>Projects</h1>
+                <section class="wrapper">
+                    <div class="item item-1">
+                        <h3>Classic Cookie Recipe</h3>
+                        <h4>HTML</h4>
+                        <p>Discover the ultimate cookie recipes! From classic chocolate chip to creative twists, bake delicious treats with easy, step-by-step guides.
+                        </p>
+                    </div>
+                    <div class="item item-2">
+                        <h3>Offside Rule</h3>
+                        <h4>HTML</h4>
+                        <p>Understand soccer's offside rule with clear explanations, illustrations, and examples, breaking down this key aspect of the beautiful game.
+                        </p>
+                    </div>
+                    <div class="item item-3">
+                        <h3>Pickleball</h3>
+                        <h4>HTML, CSS</h4>
+                        <p>Explore pickleball's rich history, from its 1965 origins to its rise as a beloved sport blending tennis, badminton, and ping-pong.
+                        </p>
+                    </div>
+                </section>
+            </div>
+
+        </main>
+
+    </div>
 </body>
 </html>

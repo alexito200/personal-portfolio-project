@@ -3,25 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/719c70038a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
     <title>Personal Portfolio</title>
 </head>
 <body bgcolor="#f0f0f0">
-    <header>
-        <nav style="margin-bottom: 100px;">
-            <a href="main.html" style="text-decoration: none; color: black; font-size: 22px;">Personal Portfolio</a>
-            <a href="about.html" style="text-decoration: none; color: black; margin-left: 420px;">About Me</a> |
-            <a href="projects.html" style="text-decoration: none; color: black;">Projects</a> |
-            <a href="skills.html" style="text-decoration: none; color: black">Skills</a> |
-            <a href="contact.html" style="text-decoration: none; color: black">Contact</a>
-            <button style="float: right; font-size: 15px; color: black">Hire me</button>
+    <div id="page">
+
+        <nav id="navbar">
+            <ul class="list">
+                <li><a href="main.html">home</a></li>
+                <li><a href="experience.html">experience</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
-        <section>
-            <p style="font-size: 100px;">Welcome to my Personal Portfolio</p>
-            <h4>My name is Alex Alarcon</h4>
-            <p style="max-width: 700px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quas et ipsa culpa magni libero possimus ab omnis. Tenetur unde maiores corporis. Quos corrupti consequatur minus nisi error corporis sapiente sit porro aspernatur unde fugit consectetur magni, repellat ex quasi? Veniam tempore beatae sunt consectetur, magnam exercitationem ea odio labore quisquam cumque veritatis commodi ut, dicta, recusandae nam! Ipsam doloremque necessitatibus harum quo numquam, enim officiis modi? Quis non laudantium maxime, error facilis obcaecati impedit quasi quos expedita est, reprehenderit earum omnis unde ullam? Inventore ducimus earum dolor. Suscipit autem nulla maiores soluta fugit ullam reiciendis in ducimus ut. Doloremque?</p>
+
+    <main class="container">
+        <section id="content">
+
+            <div class="wrapper"><img src="/media/profile-picture.jpg" alt="a handsome man with a backwards cap smiles as his skin glistens in the sun">
+            </div>
+
+            <h2 class="main-title">Alex Alarcon</h2>
+
+            <h4 class="job">Frontend Developer</h4>
+            
+            <p class="lorem">An aspiring frontend developer passionate about crafting dynamic, user-friendly interfaces. Eager to learn and grow, blending creativity with technical skills to bring engaging web experiences to life.
+            </p>
+
+            <div class="icons">
+                <a href="https://github.com/alexito200" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/alex-alarcon-82fb088/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+
         </section>
     </main>
+    </div>
 </body>
 </html>

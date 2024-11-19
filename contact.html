@@ -3,38 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
     <title>Personal Portfolio</title>
 </head>
-<body bgcolor="#f0f0f0">
-    <header>
-        <nav style="margin-bottom: 100px;">
-            <a href="main.html" style="text-decoration: none; color: black; font-size: 22px;">Personal Portfolio</a>
-            <a href="about.html" style="text-decoration: none; color: black; margin-left: 420px;">About Me</a> |
-            <a href="projects.html" style="text-decoration: none; color: black;">Projects</a> |
-            <a href="skills.html" style="text-decoration: none; color: black">Skills</a> |
-            <a href="contact.html" style="text-decoration: none; color: black">Contact</a>
-            <button style="float: right; font-size: 15px; color: black">Hire me</button>
+<body>
+    <div id="page">
+        <nav id="navbar">
+            <ul class="list">
+                <li><a href="main.html">home</a></li>
+                <li><a href="experience.html">experience</a></li>
+                <li><a href="projects.html">projects</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
         </nav>
-    </header>
-    <main>
-        <h1 style="font-size: 100px;">Contact</h1>
-        <section>
-            <form>
-                <label style="font-size: 22px;">Your name</label>
-                <input type="text" placeholder="Name" style="border-radius: 5px; margin-top: 10px;">
-                <label style="font-size: 22px;">Your email</label>
-                <input type="text" placeholder="Email" style="border-radius: 5px;">
-            </form>
-            <form style="margin-top: 10px;">
-                <label style="font-size: 22px;">Your message</label>
-                <textarea placeholder="Message" style="border-radius: 5px;"></textarea>
-            </form>
-        </section>
-        <section style="margin-top: 20px;">
-            <a href="#"><img src="facebook-icon.png" style="width: 40px; height: 40px;"></a>
-            <a href="#"><img src="twitter-icon.png" style="width: 40px; height: 40px;"></a>
-            <a href="#"><img src="linkedin-icon.png" style="width: 40px; height: 40px;"></a>
-        </section>
-    </main>
+
+
+        <main class="content">
+
+            <div class="container">
+                <form>
+                    <h1>Get In Touch</h1>
+                    <input type="text" name="name" class="name" placeholder="Your name">
+                    <input type="email" name="" class="email" placeholder="Your email">
+                    <textarea name="message" class="message" placeholder="Your message"></textarea>
+                    <input class="submit" type="submit" value="Send Message">
+                </form>
+            </div>
+
+        </main>
+    </div>
 </body>
 </html>
